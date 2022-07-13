@@ -3,10 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Signal and Information Processing for Sensing Systems</title>
-	<meta name="description" content="IBEC's research group">
+	<meta name="description" content="IBEC's research group">	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
   <style>
     body {
 
@@ -19,65 +25,102 @@
 
     a {
         color: #000;
-    }
-    
-    figure {
-        /* To correctly align image, regardless of content height: */
+      }
+    div.item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+	align-self: stretch;
+	justify-content: center;
         vertical-align: top;
-        display: inline-block;
-        /* To horizontally center images and caption */
+    }
+    div.item figure {
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         /* The width of the container also implies margin around the images. */
-        width: 10rem;
+        width: 15rem;
         border: 3px solid black;
         border-radius: 25px;
         background-color: white;
-        padding: 15px;
-        margin: 15px;
+        padding: 1rem;
+        margin: 1.5rem;
     }
-    img {
-      width: 6rem;
-      height: 6rem;
+    div.links {
+        width: 80%;
+        max-width: 90rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+    }
+    div.item img {
+      width: 7rem;
+      height: 7rem;
       background-color: white;
+      padding: 0.2rem;
 
     }
-    figcaption {
+    div.item figcaption {
       /* Make the caption a block so it occupies its own line. */
       display: block;
+    }
+    img#mainlogo {
+    width: 300px; height: 300px; display:block; margin-left: auto; margin-right: auto;
+    }
+    
+    div.toplogo figcaption {
+      text-align: center;
+      padding: 1em;
+      font-style: italic;
     }
 
   </style>
 </head>
 <body>
-  <div style="margin: auto; width: 80%; max-width: 70rem; padding: 10px;">
+  <div class="toplogo">
+    <figure>
+      <img id="mainlogo" src="media/sipss-logo.png" alt="SIPSS logo"/>
+      <figcaption>Signal and Information Processing for Sensing Systems</figcaption>
+    </figure>
+  </div>
+
+  <div class="links">
+  <div class="item">
   <a href="https://ibecbarcelona.eu/en/research-groups/signal-and-information-processing-for-sensing-systems/">
     <figure>
       <img src="media/ibec-logo.jpg" alt="IBEC logo"/>
       <figcaption>Main website</figcaption>
     </figure>
   </a>
-
+  </div>
+  <div class="item">  
   <a href="https://www.ub.edu/portal/web/dp-electronics/research-groups1">
     <figure>
       <img src="media/logo_ub.png" alt="University of Barcelona logo"/>
       <figcaption>Department of Electronic and Biomedical Engineering, University of Barcelona</figcaption>
     </figure>
   </a>
-
-
+  </div>
+  <div class="item">  
   <a href="https://github.com/sipss">
     <figure>
       <img src="media/github-logo.png" alt="Github logo"/>
       <figcaption>GitHub</figcaption>
     </figure>
   </a>
-
+  </div>
+  <div class="item">  
   <a href="https://sipss.github.io/AlpsNMR">
     <figure>
       <img src="media/alpsnmr-logo.png" alt="AlpsNMR logo"/>
       <figcaption>AlpsNMR documentation</figcaption>
     </figure>
   </a>
+  </div>
   </div>
 </body>
 </html>
