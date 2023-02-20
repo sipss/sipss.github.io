@@ -11,24 +11,15 @@ The Signal and Information Processing for Sensing Systems group develops algorit
 In this context, we are interested in intelligent chemical instruments for the detection of gases, volatile compounds, and smells. These systems can be based on an array of nonspecific chemical sensors with a pattern recognition engine, taking inspiration from the olfactory system. Some spectrometries, e.g. Ion Mobility Spectrometry, are capable of very fast analysis with good detection limits but poor selectivity. These technologies have been proposed for the fast determination of the volatolome (volatile fraction of the metabolome), instead of the reference technique of gas chromatography – mass spectrometry.
 
 
-## About AplsNMR package
+## About AlpsNMR package
 
-`AlpsNMR` can be installed with the `devtools` package. For this is needed
-Rtools and note that it uses packages from
-CRAN, from BioConductor and from git repositories:
+Checkout the [AlpsNMR](https://sipss.github.io/AlpsNMR/index.html) documentation website that shows how to import data and preprocess it using AlpsNMR. See our [publication](https://doi.org/10.1093/bioinformatics/btaa022) and the [Bioconductor page](https://www.bioconductor.org/packages/release/bioc/html/AlpsNMR.html) for further details.
 
-If you already have Rtools, follow this to install AlspNMR:
 
 ```r
 if (!"BiocManager" %in% rownames(installed.packages()))  
     install.packages("BiocManager")  
-BiocManager::install(c("MassSpecWavelet", "impute"), update = FALSE)  
-if (!"devtools" %in% rownames(installed.packages()))  
-    install.packages("devtools")  
-devtools::install_github("sipss/AlpsNMR")
+BiocManager::install("AlpsNMR")
 ```
 
-Quick start
-=============
 
-Checkout the [AlpsNMR](https://sipss.github.io/AlpsNMR/index.html) vignette that shows how to import data and preprocess it using AlpsNMR. See our [publication](https://doi.org/10.1093/bioinformatics/btaa022) for further details.
